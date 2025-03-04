@@ -4,12 +4,14 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Navbar from './components/navbar'
 import Carousel from './components/carousel'
+import Houses from './components/houses'
 function App() {
   
   return (
     <>
     <Navbar/>
     <Carousel/>
+    <Houses/>
     </>
   )
 }
