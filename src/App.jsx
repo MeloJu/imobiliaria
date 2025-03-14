@@ -1,19 +1,22 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import Navbar from './components/navbar'
-import Carousel from './components/carousel'
-import Houses from './components/houses'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navbar from "./components/navbar";
+import Carousel from "./components/carousel";
+import Houses from "./components/Houses";
+import Product from "./components/product";
+
 function App() {
-  
   return (
-    <>
-    <Navbar/>
-    <Carousel/>
-    <Houses/>
-    </>
-  )
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<>
+          <Carousel />
+          <Houses />
+        </>} />
+        <Route path="/product/:id" element={<Product />} />
+      </Routes>
+    </Router>
+  );
 }
 
-export default App
+export default App;

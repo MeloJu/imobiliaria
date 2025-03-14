@@ -1,8 +1,95 @@
-.container1 {
-    width: 100vw;
-    height: 100vh;
+/* Estilos gerais para a página de detalhes do produto */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5; /* Fundo claro para contraste */
+  }
+  
+  /* Container principal do produto */
+  .product-container {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column; /* Layout responsivo empilhável em tela pequena */
+    max-width: 2400px; /* Limitar largura máxima */
+    margin: 20px auto; /* Centralizar na tela */
+    background-color: #ffffff; /* Fundo branco para o conteúdo */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  }
+  
+  /* Seção da imagem */
+  .image-section {
+    display: flex;
+    justify-content: center; /* Centraliza a imagem horizontalmente */
+    padding: 20px;
+  }
+  
+  .image-section img {
+    max-width: 100%; /* Tornar a imagem responsiva */
+    border-radius: 8px; /* Bordas arredondadas na imagem */
+  }
+  
+  /* Seção dos detalhes */
+  .details-section {
+    padding: 20px;
+  }
+  
+  /* Estilo do título */
+  .details-section h1 {
+    font-size: 24px; /* Tamanho maior para destaque */
+    color: #333; /* Cor escura para bom contraste */
+    margin-bottom: 10px; /* Espaço abaixo do título */
+  }
+  
+  /* Estilo da descrição */
+  .description {
+    font-size: 16px; /* Tamanho padrão para texto */
+    color: #666; /* Texto em cinza escuro */
+    margin-bottom: 10px; /* Espaço abaixo da descrição */
+  }
+  
+  /* Estilo da localização */
+  .location {
+    font-size: 14px; /* Texto um pouco menor */
+    color: #999; /* Cor cinza claro */
+    margin-bottom: 10px; /* Espaço abaixo da localização */
+  }
+  
+  /* Estilo do preço */
+  .price {
+    font-size: 20px; /* Preço em tamanho maior */
+    color: #d9534f; /* Cor vermelha para preço */
+    margin-bottom: 20px; /* Espaço acima do botão */
+  }
+  
+  /* Estilo do botão de contato */
+  .contact-button {
+    background-color: #5cb85c; /* Verde para o botão */
+    color: white; /* Texto branco */
+    border: none; /* Sem bordas */
+    border-radius: 4px; /* Bordas arredondadas */
+    padding: 10px 20px; /* Espaçamento interno */
+    cursor: pointer; /* Mudança de cursor ao passar o mouse */
+    font-size: 16px; /* Tamanho do texto do botão */
+  }
+  
+  /* Efeitos do botão */
+  .contact-button:hover {
+    background-color: #4cae4c; /* Cor mais escura ao passar o mouse */
+  }
+  
+  /* Responsividade */
+  @media (min-width: 768px) {
+    .product-container {
+      flex-direction: row; /* Alterar para layout horizontal em telas grandes */
     }
+  
+    .image-section, .details-section {
+      flex: 1; /* Ambos ocupam igual espaço */
+    }
+  
+    .details-section {
+      padding-left: 20px; /* Espaço entre imagem e detalhes */
+    }
+  }
+  

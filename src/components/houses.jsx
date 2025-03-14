@@ -4,6 +4,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { casas } from '../objects/test';
+import { NavLink } from "react-router-dom";
 
 function BasicExample() {
   return (
@@ -16,7 +17,9 @@ function BasicExample() {
               <Card.Body>
                 <Card.Title>{knust.title}</Card.Title>
                 <Card.Text>{knust.text}</Card.Text>
-                <Button variant="primary">Ver Casa</Button>
+                <NavLink to={`./product/${knust.id}`} className="btn btn-primary">
+                  Ver Casa
+                </NavLink>
               </Card.Body>
             </Card>
           </Col>
