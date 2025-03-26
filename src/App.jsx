@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/navbar";
 import Carousel from "./components/carousel";
 import Houses from "./components/Houses";
-import Product from "./components/product";
+import Product from "./components/Product";
 
 function App() {
   return (

@@ -13,7 +13,7 @@ function BasicExample() {
         {casas.map((knust) => (
           <Col key={knust.id} xs={12} sm={6} md={4} lg={3} className="d-flex justify-content-center">
             <Card style={{ width: '18rem' }}>
-              <Card.Img variant="top" src={knust.src} />
+              <Card.Img variant="top" src={knust.images[0]} />
               <Card.Body>
                 <Card.Title>{knust.title}</Card.Title>
                 <Card.Text>{knust.text}</Card.Text>

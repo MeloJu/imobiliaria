@@ -5,9 +5,10 @@
     margin: auto;
     padding: 20px;
     gap: 20px;
-    background: #fff;
+    background: #fff; 
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    
   }
   
   .image-section {
@@ -67,3 +68,36 @@
   .contact-button:hover {
     background: #e65c00;
   }
+
+  .carousel-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .main-slider {
+    width: 80%;
+    margin-bottom: 10px;
+  }
+  
+  .main-slide img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .thumbnail-slider {
+    width: 60%;
+  }
+  
+  .thumbnail img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .thumbnail img:hover {
+    border: 2px solid #ff6600;
+  }
+  

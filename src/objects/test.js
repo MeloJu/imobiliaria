@@ -3,7 +3,11 @@ export const casas = [
       id: 1,
       title: "Casa Tal",
       text: "Lorem ipsum dolor sit amet.",
-      src: "/images/casa1.jpeg",
+      images: [
+        "/images/casa1.jpeg",
+        "/images/casa1.jpeg",
+        "/images/casa1.jpeg"
+      ],
       target: "_blank",
       bairro: "Lorem Ipsum",
       cidade: "Cachoeiras",
@@ -16,7 +20,11 @@ export const casas = [
       id: 2,
       title: "Casa Exemplo",
       text: "Texto de descrição diferente.",
-      src: "/images/casa1.jpeg",
+      images: [
+        "/images/casa1.jpeg",
+        "/images/casa1.jpeg",
+        "/images/casa1.jpeg"
+      ],
       target: "_blank",
       bairro: "Bairro X",
       cidade: "Cachoeiras",
@@ -29,7 +37,11 @@ export const casas = [
       id: 3,
       title: "Casa Y",
       text: "Outra casa disponível.",
-      src: "/images/casa1.jpeg",
+      images: [
+        "/images/casa1.jpeg",
+        "/images/casa1.jpeg",
+        "/images/casa1.jpeg"
+      ],
       target: "_blank",
       bairro: "Centro",
       cidade: "Cachoeiras",
