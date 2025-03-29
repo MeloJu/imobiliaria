@@ -1,2 +1,2 @@
-# Front-End for a real estate business
+# Front-End for a real estate agency
 
